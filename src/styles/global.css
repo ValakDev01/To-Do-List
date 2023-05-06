@@ -1,0 +1,103 @@
+.list__container {
+  width: 400px;
+  height: 510px;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  border: 3px solid black;
+  scrollbar-width: thin;
+}
+.list__container h1 {
+  margin: 10px 0 20px 0;
+}
+
+.defaultTitle {
+  width: 100%;
+  border: 1.4px solid black;
+  padding: 10px 7px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.search__container {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.search__container input {
+  width: 100%;
+  height: 40px;
+  padding: 10px 7px;
+}
+.search__container input:focus {
+  outline: none;
+  border: 1.4px solid black;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.item__container {
+  width: 100%;
+  border: 1.4px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 7px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.item__container--taskName {
+  font-size: 15px;
+  font-weight: 550;
+}
+.item__container--iconsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 4px;
+}
+.item__container--iconsContainer__firstIconContainer {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  cursor: pointer;
+}
+.item__container--iconsContainer__firstIconContainer--acceptIcon {
+  font-size: 15px;
+}
+.item__container--iconsContainer__secondIconContainer {
+  border: 2px solid red;
+  border-radius: 20px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding: 1px;
+  cursor: pointer;
+  margin-top: 1.5px;
+}
+.item__container--iconsContainer__secondIconContainer--closeIcon {
+  margin-bottom: 1px;
+  font-size: 8px;
+}
+
+.taskDone {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-color: #00D26A;
+  text-decoration-thickness: 2px;
+}/*# sourceMappingURL=global.css.map */

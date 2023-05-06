@@ -1,0 +1,47 @@
+@import './styles/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: skyblue;
+}
+
+.list__container {
+    width: 400px;
+    height: 510px;
+    background-color: $secondary-color;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    border: 3px solid $primary-color;
+    scrollbar-width: thin;
+
+    & h1 {
+        margin: 10px 0 20px 0;
+    }
+}
+
+.defaultTitle {
+    width: 100%;
+    border: 1.4px solid $primary-color;
+    padding: 10px 7px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 2px 2px 5px $box-shadow;
+}
